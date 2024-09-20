@@ -36,12 +36,12 @@ jobs:
     runs-on: ${{ inputs.os }}
     steps:
       - name: 🏗 Setup repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: 🏗 Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 18.x
 
       - name: 🏗 Setup Expo and EAS
         uses: expo/expo-github-action@v7

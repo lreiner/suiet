@@ -76,7 +76,7 @@ jobs:
             --profile=${{ inputs.profile }}
 
       - name: 📱 Upload binary
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: app-${{ inputs.platform }}-${{ inputs.profile }}
           path: packages/expo/build-*
